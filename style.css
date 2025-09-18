@@ -252,11 +252,12 @@ header {
   text-align: center;
 }
 .slider-container {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slide {
+  min-width: 100%;
   display: none;
   align-items: center;
   justify-content: flex-start;
@@ -384,4 +385,5 @@ text p {
     padding: 32px 12px;
   }
 }
+
 
