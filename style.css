@@ -245,64 +245,6 @@ header {
   background: #b45309; /* amber-700 */
 }
 
-/* Sección */
-.info-slider {
-  max-width: 90%;
-  margin: 30px auto;
-  text-align: center;
-}
-.slider-container {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: 300%; /* 100% * cantidad de slides */
-}
-
-.slide {
-  flex: 0 0 100%; /* cada slide ocupa el 100% del contenedor */
-  display: flex;   /* todas visibles y en fila */
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-
-.icon i {
-  font-size: 28px;
-  color: #2e5339;
-}
-
-.text h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-text p {
-  font-size: 14px;
-  color: #555;
-  margin: 5px 0 0;
-}
-
-.dots {
-  margin-top: 15px;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  display: inline-block;
-  border-radius: 50%;
-  background: #ccc;
-  cursor: pointer;
-}
-
-.dot.active {
-  background: #2e5339; /* color verde para combinar con tu logo */
-}
 /* Footer General */
 .footer {
   background-color: #78350f;  /* ámbar oscuro */
@@ -383,6 +325,7 @@ text p {
     padding: 32px 12px;
   }
 }
+
 
 
 
