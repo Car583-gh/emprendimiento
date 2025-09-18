@@ -25,11 +25,10 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 24px;
-  margin-right: auto;
-  font-family: 'Pacifico', cursive;
-  color: #92400e; /* similar a amber-800 */
+.logo img {
+  height: 150px;
+  width: auto;
+  display: block;
 }
 
 .icons {
@@ -246,31 +245,65 @@ header {
   background: #b45309; /* amber-700 */
 }
 
-/* Sección Tradición y Calidad */
-.tradicion-calidad {
-  padding: 4rem 1rem;          /* espacio arriba y abajo */
-  background-color: rgba(255, 255, 255, 0.5); /* fondo blanco semitransparente */
+/* Sección */
+.info-slider {
+  max-width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.tradicion-calidad .contenedor {
-  max-width: 800px;            /* ancho máximo */
-  margin: 0 auto;              /* centrar horizontal */
-  text-align: center;          /* centrar textos */
+.slide {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.tradicion-calidad h3 {
-  font-size: 2rem;             /* tamaño del título */
+.slide.active {
+  display: flex;
+}
+
+.icon i {
+  font-size: 28px;
+  color: #2e5339;
+}
+
+.text h3 {
+  font-size: 18px;
   font-weight: bold;
-  color: #92400e;              /* tono marrón (ámbar oscuro) */
-  margin-bottom: 1.5rem;
+  margin: 0;
+}
+text p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0;
 }
 
-.tradicion-calidad p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #b45309;              /* tono ámbar medio */
+.dots {
+  margin-top: 15px;
 }
 
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2e5339; /* color verde para combinar con tu logo */
+}
 /* Footer General */
 .footer {
   background-color: #78350f;  /* ámbar oscuro */
@@ -351,3 +384,4 @@ header {
     padding: 32px 12px;
   }
 }
+
